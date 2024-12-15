@@ -43,7 +43,57 @@
   }
 
   &:hover {
-    background-color: transparent;
+    background: transparent;
+  }
+
+  &:hover::before {
+    top: -10px;
+  }
+}
+
+.ts-btn2 {
+  user-select: none;
+  background: $tertiary-color none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 80px;
+  color: $title-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 0px;
+  padding: 16px 36px;
+  text-align: center;
+  touch-action: manipulation;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background: $black-color-two;
+    z-index: -1;
+    border-radius: 20%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
+    background: transparent;
+    color: $white-color;
   }
 
   &:hover::before {

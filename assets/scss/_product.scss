@@ -1,5 +1,5 @@
 //
-// hero.scss // All Product CSS
+// product.scss // All Product CSS
 //
 
 .product {
@@ -7,16 +7,169 @@
   &--one {
     position: relative;
     padding-top: 120px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     z-index: 1;
 
-    .hero {
-      &__content {
-        position: relative;
+    .product {
+      &__thumb {
+        & img {
+          width: 100%;
+        }
       }
 
-      &__thumb {
+      &__content {
+        margin-left: 10px;
+        @include breakpoint(max-lg) {
+          margin-left: 0;
+        }
+
+        &--name {
+        }
+
+        &--rating-review {
+          display: flex;
+          gap: 8px;
+          .rating {
+            i {
+              color: #ffd200;
+              font-size: 14px;
+              margin-right: 2px;
+            }
+          }
+          .review {
+            font-size: 14px;
+          }
+        }
+
+        &--price {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .old-price {
+            font-size: 20px;
+            color: $desc-color;
+            text-decoration: line-through;
+          }
+
+          .current-price {
+            color: $primary-color;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+
+        &--description {
+          padding-right: 80px;
+          @include breakpoint(max-xl) {
+            padding-right: 4px;
+          }
+        }
+
+        &--type-model {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          .type {
+            p {
+              margin: 0;
+              font-size: 14px;
+            }
+
+            span {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+          .model {
+            p {
+              margin: 0;
+              font-size: 14px;
+            }
+
+            span {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+
+        &--brand-color {
+        }
+
+        &--size-varient {
+        }
+
+        &--cart-action {
+          display: flex;
+        }
+      }
+    }
+
+    .product-checkout-btn {
+      .ts-btn2 {
+        user-select: none;
+        background: $tertiary-color none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 80px;
+        color: $title-color;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 1;
+        margin-bottom: 0px;
+        padding: 16px 36px;
+        text-align: center;
+        touch-action: manipulation;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        vertical-align: middle;
+        white-space: nowrap;
         position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -90px;
+          top: -135%;
+          width: 190%;
+          height: 135%;
+          background: $black-color-two;
+          z-index: -1;
+          border-radius: 20%;
+          -webkit-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+        }
+
+        &:hover {
+          background: transparent;
+          color: $white-color;
+          .count {
+            background: $tertiary-color;
+            color: $title-color;
+          }
+        }
+
+        &:hover::before {
+          top: -10px;
+        }
+
+        .count {
+          padding: 2px 6px;
+          background: $white-color;
+          border-radius: 5px;
+          margin-left: 10px;
+          transition: all 0.4s ease-in-out;
+        }
       }
     }
   }

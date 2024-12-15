@@ -18,37 +18,164 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icons CSS -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Spacing  CSS -->
+    <link rel="stylesheet" href="assets/css/spacing.css">
     <!-- Custom  CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- ==========Product Section Starts Here========== -->
-    <section class="product product--one">
-        <div class="container">
+    <main>
 
-            <div class="row g-5">
+        <!-- ==========Product Section Starts Here========== -->
+        <section class="product product--one">
+            <div class="container">
 
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="product__thumb">
+                <div class="row g-5  mb_110">
 
-                        <img class="img-fluid" src="assets/img/product/big-violet.png" alt="Product">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                        <div class="product__thumb">
 
+                            <img class="img-fluid" src="assets/img/product/big-violet.png" alt="Product">
+
+                        </div>
                     </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center">
+                        <div class="product__content">
+
+                            <div class="product__content--name mb_10">
+                                <h2>Classy Modern Smart watch</h2>
+                            </div>
+
+                            <div class="product__content--rating-review">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="review">(2 Review)</p>
+                            </div>
+
+                            <div class="product__content--price mb_12">
+                                <span class="old-price">$99.00</span>
+                                <h3 class="current-price">$79.99</h3>
+                            </div>
+
+                            <div class="product__content--description mb_14">
+                                <p>I must explain to you how all this mistaken idea of denoun cing ple praising pain was
+                                    born and I will give you a
+                                    complete account of the system, and expound the actual teaching.</p>
+                            </div>
+
+                            <div class="product__content--type-model mb_14">
+                                <div class="type">
+                                    <p>Type</p>
+                                    <span>Watch</span>
+                                </div>
+
+                                <div class="model">
+                                    <p>Model Number</p>
+                                    <span>Forerunner 290XT</span>
+                                </div>
+                            </div>
+
+                            <div class="product__content--brand-color">
+                                <h5>Band Color</h5>
+                                <div class="color-varient">
+
+                                    <!-- Violet Color Option -->
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorViolet"
+                                        autocomplete="off" />
+                                    <label class="color-circle violet" for="colorViolet"></label>
+
+                                    <!-- Cyan Color Option -->
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorCyan"
+                                        autocomplete="off" />
+                                    <label class="color-circle cyan" for="colorCyan"></label>
+
+                                    <!-- Blue Color Option -->
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorBlue"
+                                        autocomplete="off" />
+                                    <label class="color-circle blue" for="colorBlue"></label>
+
+                                    <!-- Black Color Option -->
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorBlack"
+                                        autocomplete="off" />
+                                    <label class="color-circle black" for="colorBlack"></label>
+
+                                </div>
+                            </div>
+
+                            <div class="product__content--size-varient">
+                                <h5>Wrist Size</h5>
+                                <div class="size-varient-all">
+
+                                    <input type="radio" class="btn-check" name="bandSize" id="SSize" value="69"
+                                        autocomplete="off" />
+                                    <label class="size-varient-item" for="SSize"><strong>S</strong> $69</label>
+
+                                    <input type="radio" class="btn-check" name="bandSize" id="MSize" value="79"
+                                        autocomplete="off" />
+                                    <label class="size-varient-item" for="MSize"><strong>M</strong> $79</label>
+
+                                    <input type="radio" class="btn-check" name="bandSize" id="LSize" value="89"
+                                        autocomplete="off" />
+                                    <label class="size-varient-item" for="LSize"><strong>L</strong> $89</label>
+
+                                    <input type="radio" class="btn-check" name="bandSize" id="XLSize" value="99"
+                                        autocomplete="off" />
+                                    <label class="size-varient-item" for="XLSize"><strong>XL</strong> $99</label>
+                                </div>
+                            </div>
+
+                            <!-- <p>Total Price: <span id="totalPrice">$69</span></p> -->
+
+                            <div class="product__content--cart-action">
+
+                                <div class="input-group" style="width: 130px">
+                                    <button class="btn btn-outline-secondary" type="button" id="decrement">
+                                        -
+                                    </button>
+                                    <input type="text" class="form-control text-center" value="0" id="quantity"
+                                        readonly />
+                                    <button class="btn btn-outline-secondary" type="button" id="increment">
+                                        +
+                                    </button>
+                                </div>
+
+                                <button class="ts-btn1">Add to Cart</button>
+
+                                <a class="heart d-flex align-items-center justify-content-center" href="#"><i
+                                        class="far fa-heart"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center">
-                    <div class="product__content">
+                <div class="row">
 
-
-
+                    <div class="col-xl-12">
+                        <div class="product-checkout-btn text-center">
+                            <button class="ts-btn2 btn-checkout" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                Checkout <span id="total_item" class="count">0</span>
+                            </button>
+                        </div>
                     </div>
+
                 </div>
+
 
             </div>
-        </div>
-    </section>
-    <!-- ==========Product Section Ends Here========== -->
+        </section>
+        <!-- ==========Product Section Ends Here========== -->
+
+    </main>
 
     <!-- JavaScript -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

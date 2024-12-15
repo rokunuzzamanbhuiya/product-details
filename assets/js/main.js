@@ -1,10 +1,10 @@
-(function ($) {
-  ("use strict");
+(function () {
+  "use strict";
 
   /*
-  Template Name: Restaurant Website - Taste The Authentic Saudi Cuisine
+  Template Name: Product Details Page HTML Template
   Author: Rokunuzzaman Bhuiya
-  Description: Restaurant Website - Taste The Authentic Saudi Cuisine
+  Description: Product Details Page HTML Template
   File Description: Main JS file of the template
-*/
-})(jQuery);
+  */
+})();
