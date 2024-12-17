@@ -326,6 +326,11 @@ p {
   cursor: pointer;
   color: #8091a7;
 }
+@media (max-width: 449.98px) {
+  .product--one .product__content--size-varient .size-varient-item {
+    margin-bottom: 12px;
+  }
+}
 .product--one .product__content--size-varient span {
   font-size: 14px;
   font-weight: 700;
@@ -342,7 +347,27 @@ p {
   display: flex;
 }
 .product--one .product__content--cart-action .input-group {
-  width: 130px;
+  width: 140px;
+}
+.product--one .product__content--cart-action .input-group .ts-btn-decrement {
+  background: #ffffff;
+  border: 1px solid #dbdfea;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 40px;
+}
+.product--one .product__content--cart-action .input-group .ts-btn-quantity {
+  color: #364a63;
+  background: #ffffff;
+  border: 1px solid #dbdfea;
+  width: 60px;
+}
+.product--one .product__content--cart-action .input-group .ts-btn-increment {
+  background: #ffffff;
+  border: 1px solid #dbdfea;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 40px;
 }
 .product--one .product__content--cart-action .ts-btn1 {
   user-select: none;
@@ -352,16 +377,14 @@ p {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
-  margin-bottom: 0px;
-  padding: 16px 36px;
+  margin-bottom: 0;
+  padding: 16px 30px;
   text-align: center;
   touch-action: manipulation;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   vertical-align: middle;
   white-space: nowrap;
@@ -373,66 +396,18 @@ p {
   content: "";
   position: absolute;
   left: -90px;
-  top: -135%;
+  top: -140%;
   width: 190%;
-  height: 135%;
+  height: 140%;
   background: #0f002b;
   z-index: -1;
-  border-radius: 20%;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  border-radius: 10%;
   transition: all 0.4s ease-in-out;
 }
 .product--one .product__content--cart-action .ts-btn1:hover {
   background: transparent;
 }
 .product--one .product__content--cart-action .ts-btn1:hover::before {
-  top: -10px;
-}
-.product--one .product__content--cart-action .ts-btn2 {
-  user-select: none;
-  background: #ffbb5a none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 80px;
-  color: #364a63;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-  margin-bottom: 0px;
-  padding: 16px 36px;
-  text-align: center;
-  touch-action: manipulation;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.product--one .product__content--cart-action .ts-btn2::before {
-  content: "";
-  position: absolute;
-  left: -90px;
-  top: -135%;
-  width: 190%;
-  height: 135%;
-  background: #0f002b;
-  z-index: -1;
-  border-radius: 20%;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.product--one .product__content--cart-action .ts-btn2:hover {
-  background: transparent;
-  color: #ffffff;
-}
-.product--one .product__content--cart-action .ts-btn2:hover::before {
   top: -10px;
 }
 .product--one .product__content--cart-action .heart i {
@@ -449,16 +424,14 @@ p {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
-  margin-bottom: 0px;
-  padding: 16px 36px;
+  margin-bottom: 0;
+  padding: 16px 30px;
   text-align: center;
   touch-action: manipulation;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   vertical-align: middle;
   white-space: nowrap;
@@ -470,14 +443,12 @@ p {
   content: "";
   position: absolute;
   left: -90px;
-  top: -135%;
+  top: -140%;
   width: 190%;
-  height: 135%;
+  height: 140%;
   background: #0f002b;
   z-index: -1;
   border-radius: 20%;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .product--one .product-checkout-btn .ts-btn2:hover {
@@ -492,11 +463,44 @@ p {
   top: -10px;
 }
 .product--one .product-checkout-btn .ts-btn2 .count {
-  padding: 2px 6px;
+  padding: 2px 6.5px 2px 6px;
   background: #ffffff;
   border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
   margin-left: 10px;
   transition: all 0.4s ease-in-out;
+}
+.product--modal .continue-shop-btn {
+  color: #364a63;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 10px 22px;
+  outline: 1px solid #dbdfea;
+}
+.product--modal .modal-checkout-btn {
+  user-select: none;
+  background: #6576ff none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 10px 22px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all 0.4s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .product--index {
   position: relative;

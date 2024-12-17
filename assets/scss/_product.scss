@@ -175,6 +175,9 @@
             border-radius: 3px;
             cursor: pointer;
             color: $desc-color;
+            @include breakpoint(max-esmm) {
+              margin-bottom: 12px;
+            }
           }
 
           span {
@@ -197,7 +200,30 @@
           display: flex;
 
           .input-group {
-            width: 130px;
+            width: 140px;
+
+            .ts-btn-decrement {
+              background: $white-color;
+              border: 1px solid #dbdfea;
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
+              width: 40px;
+            }
+
+            .ts-btn-quantity {
+              color: $title-color;
+              background: $white-color;
+              border: 1px solid #dbdfea;
+              width: 60px;
+            }
+
+            .ts-btn-increment {
+              background: $white-color;
+              border: 1px solid #dbdfea;
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 4px;
+              width: 40px;
+            }
           }
 
           .ts-btn1 {
@@ -208,16 +234,14 @@
             color: $white-color;
             cursor: pointer;
             display: inline-block;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 13px;
+            font-weight: 700;
             letter-spacing: 0;
             line-height: 1;
-            margin-bottom: 0px;
-            padding: 16px 36px;
+            margin-bottom: 0;
+            padding: 16px 30px;
             text-align: center;
             touch-action: manipulation;
-            -webkit-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
             transition: all 0.4s ease-in-out;
             vertical-align: middle;
             white-space: nowrap;
@@ -229,69 +253,17 @@
               content: "";
               position: absolute;
               left: -90px;
-              top: -135%;
+              top: -140%;
               width: 190%;
-              height: 135%;
+              height: 140%;
               background: $black-color-two;
               z-index: -1;
-              border-radius: 20%;
-              -webkit-transition: all 0.4s ease-in-out;
-              -o-transition: all 0.4s ease-in-out;
+              border-radius: 10%;
               transition: all 0.4s ease-in-out;
             }
 
             &:hover {
               background: transparent;
-            }
-
-            &:hover::before {
-              top: -10px;
-            }
-          }
-
-          .ts-btn2 {
-            user-select: none;
-            background: $tertiary-color none repeat scroll 0 0;
-            border: medium none;
-            border-radius: 80px;
-            color: $title-color;
-            cursor: pointer;
-            display: inline-block;
-            font-size: 15px;
-            font-weight: 600;
-            letter-spacing: 0;
-            line-height: 1;
-            margin-bottom: 0px;
-            padding: 16px 36px;
-            text-align: center;
-            touch-action: manipulation;
-            -webkit-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
-            transition: all 0.4s ease-in-out;
-            vertical-align: middle;
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-
-            &::before {
-              content: "";
-              position: absolute;
-              left: -90px;
-              top: -135%;
-              width: 190%;
-              height: 135%;
-              background: $black-color-two;
-              z-index: -1;
-              border-radius: 20%;
-              -webkit-transition: all 0.4s ease-in-out;
-              -o-transition: all 0.4s ease-in-out;
-              transition: all 0.4s ease-in-out;
-            }
-
-            &:hover {
-              background: transparent;
-              color: $white-color;
             }
 
             &:hover::before {
@@ -320,16 +292,14 @@
         box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
         cursor: pointer;
         display: inline-block;
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 700;
         letter-spacing: 0;
         line-height: 1;
-        margin-bottom: 0px;
-        padding: 16px 36px;
+        margin-bottom: 0;
+        padding: 16px 30px;
         text-align: center;
         touch-action: manipulation;
-        -webkit-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         vertical-align: middle;
         white-space: nowrap;
@@ -341,14 +311,12 @@
           content: "";
           position: absolute;
           left: -90px;
-          top: -135%;
+          top: -140%;
           width: 190%;
-          height: 135%;
+          height: 140%;
           background: $black-color-two;
           z-index: -1;
           border-radius: 20%;
-          -webkit-transition: all 0.4s ease-in-out;
-          -o-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
         }
 
@@ -366,13 +334,51 @@
         }
 
         .count {
-          padding: 2px 6px;
+          padding: 2px 6.5px 2px 6px;
           background: $white-color;
           border-radius: 5px;
+          font-size: 14px;
+          font-weight: 700;
           margin-left: 10px;
           transition: all 0.4s ease-in-out;
         }
       }
+    }
+  }
+
+  &--modal {
+    // Cart Modal
+    .continue-shop-btn {
+      color: $title-color;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 3px;
+      padding: 10px 22px;
+      outline: 1px solid #dbdfea;
+    }
+
+    .modal-checkout-btn {
+      user-select: none;
+      background: $primary-color none repeat scroll 0 0;
+      border: medium none;
+      border-radius: 3px;
+      color: $white-color;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 10px 22px;
+      text-align: center;
+      touch-action: manipulation;
+      transition: all 0.4s ease-in-out;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
     }
   }
 
