@@ -46,7 +46,7 @@
                         <div class="product__content">
 
                             <div class="product__content--name mb_10">
-                                <h2>Classy Modern Smart Watch</h2>
+                                <h2 class="product-title">Classy Modern Smart Watch</h2>
                             </div>
 
                             <div class="product__content--rating-review">
@@ -133,7 +133,6 @@
                                 </div>
                             </div>
 
-                            <!-- <p>Total Price: <span id="totalPrice">$69</span></p> -->
 
                             <div class="product__content--cart-action">
 
@@ -141,14 +140,14 @@
                                     <button class="ts-btn-decrement" type="button" id="decrement">
                                         <img src="assets/img/icon/minus.png" alt="Minus">
                                     </button>
-                                    <input type="text" class="form-control text-center ts-btn-quantity" value="0"
+                                    <input type="text" class="form-control text-center ts-btn-quantity" value="1"
                                         id="quantity" readonly>
                                     <button class="ts-btn-increment" type="button" id="increment">
                                         <img src="assets/img/icon/plus.png" alt="plus">
                                     </button>
                                 </div>
 
-                                <button class="ts-btn1 ml_16 mr_12">Add to Cart</button>
+                                <button class="ts-btn1 add-to-cart-btn ml_16 mr_12">Add to Cart</button>
 
                                 <a class="heart d-flex align-items-center justify-content-center" href="#"><i
                                         class="far fa-heart"></i></a>
@@ -163,6 +162,10 @@
                 <div class="row">
 
                     <div class="col-xl-12">
+                        <div class="product-total-price text-center">
+                            <p>Total Price: <span id="totalPrice">$69</span></p>
+                        </div>
+
                         <div class="product-checkout-btn text-center">
                             <button class="ts-btn2 btn-checkout" data-bs-toggle="modal" data-bs-target="#cartModal">
                                 Checkout <span id="total_item" class="count">0</span>
@@ -183,33 +186,35 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                            <h5 class="modal-title mb_10" id="cartModalLabel">Your Cart</h5>
 
                             <!-- Cart Table -->
-                            <table class="table" id="cartTable">
-                                <thead>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Color</th>
-                                        <th>Size</th>
-                                        <th>Qnt</th>
-                                        <th>Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="cartBody">
-                                    <tr id="emptyCartMessage">
-                                        <td colspan="5" class="text-center">Your cart is empty.</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot id="cartFooter">
-                                    <tr>
-                                        <td colspan="3">Total</td>
-                                        <td id="cartTotalQuantity">0</td>
-                                        <td id="cartTotalPrice">$0.00</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
 
+                            <div class="table-responsive">
+                                <table class="table" id="cartTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Color</th>
+                                            <th>Size</th>
+                                            <th>Qnt</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cartBody">
+                                        <tr id="emptyCartMessage">
+                                            <td colspan="5" class="text-center">Your cart is empty!</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot id="cartFooter">
+                                        <tr>
+                                            <td colspan="3">Total</td>
+                                            <td id="cartTotalQuantity">0</td>
+                                            <td id="cartTotalPrice">$0.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
                             <!-- Buttons -->
                             <div class="d-flex justify-content-end gap-4">
                                 <button type="button" class="btn continue-shop-btn" data-bs-dismiss="modal">
@@ -223,8 +228,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- ==========Cart Modal Ends Here========== -->
+            <!-- ==========Cart Modal Ends Here========== -->
 
     </main>
 

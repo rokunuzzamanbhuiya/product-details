@@ -1,7 +1,7 @@
 # Product Detials HTML Website
 
 **HTML Website Live Link** <br>
-https://www.netlify.app
+https://product-details-cart.netlify.app
 
 =================================
 
@@ -28,7 +28,7 @@ A Modern and Responsive Product Detials Page HTML Template. This Website was bui
 # Product Detials React Website
 
 **React Website Live Link** <br>
-https://www.netlify.app
+https://product-details-react-cart.netlify.app
 
 **React Repository Link** <br>
 https://github.com/rokunuzzamanbhuiya/product-details-react.git
