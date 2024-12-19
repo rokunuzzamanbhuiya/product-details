@@ -5,7 +5,7 @@ https://product-details-cart.netlify.app
 
 =================================
 
-A Modern and Responsive Product Detials Page HTML Template. This Website was built with HTML and includes various UI/UX enhancements using Bootstrap, Sass, Fontawesome Icons etc.
+A Modern and Responsive Product Detials Page HTML Template. This Website was built with HTML and includes various UI/UX enhancements using Bootstrap, Sass, Vanila JS etc.
 
 ## Features
 - Responsive layout with W3C validate code.

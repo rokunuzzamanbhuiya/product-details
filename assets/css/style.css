@@ -159,6 +159,8 @@ p {
   top: -8%;
   left: -6%;
   z-index: -1;
+  animation: downup 8s infinite ease-in-out alternate;
+  -webkit-animation: downup 8s infinite ease-in-out alternate;
 }
 @media (max-width: 1199.98px) {
   .pageheader .banner-img4 {
@@ -444,6 +446,9 @@ p {
   font-size: 20px;
   font-weight: 500;
 }
+.product--one .product__content--total-price {
+  display: none;
+}
 .product--one .product-checkout-btn .ts-btn2 {
   user-select: none;
   background: #ffbb5a none repeat scroll 0 0;
@@ -513,6 +518,27 @@ p {
 .product--modal th {
   font-size: 14px;
   color: #8091a7;
+}
+.product--modal tbody td {
+  padding: 20px 0 10px 0;
+}
+.product--modal tbody td p.item-name {
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 991.98px) {
+  .product--modal tbody td {
+    padding: 20px 0 10px 0;
+    margin: 0;
+  }
+  .product--modal tbody td p.item-name {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.product--modal tfoot {
+  border-bottom: 1px solid transparent;
 }
 .product--modal .continue-shop-btn {
   user-select: none;

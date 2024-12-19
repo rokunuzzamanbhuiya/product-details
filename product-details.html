@@ -30,25 +30,19 @@
         <!-- ==========Product Section Starts Here========== -->
         <section class="product product--one">
             <div class="container">
-
                 <div class="row g-5  mb_110">
-
                     <div class="col-xl-6 col-lg-6 col-md-12">
                         <div class="product__thumb">
 
                             <img id="productThumbnail" src="./assets/img/product/big-violet.png" alt="Product Thumbnail"
                                 class="img-fluid">
-
                         </div>
                     </div>
-
                     <div class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center">
                         <div class="product__content">
-
                             <div class="product__content--name mb_10">
                                 <h2 class="product-title">Classy Modern Smart Watch</h2>
                             </div>
-
                             <div class="product__content--rating-review">
                                 <div class="rating">
                                     <i class="fas fa-star"></i>
@@ -59,83 +53,56 @@
                                 </div>
                                 <p class="review">(2 Reviews)</p>
                             </div>
-
                             <div class="product__content--price mb_12">
                                 <span class="old-price">$99.00</span>
                                 <h3 class="current-price">$79.99</h3>
                             </div>
-
                             <div class="product__content--description mb_14">
                                 <p>I must explain to you how all this mistaken idea of denoun cing ple praising pain was
                                     born and I will give you a
                                     complete account of the system, and expound the actual teaching.</p>
                             </div>
-
                             <div class="product__content--type-model mb_14">
                                 <div class="type">
                                     <p>Type</p>
                                     <span>Watch</span>
                                 </div>
-
                                 <div class="model">
                                     <p>Model Number</p>
                                     <span>Forerunner 290XT</span>
                                 </div>
                             </div>
-
                             <div class="product__content--band-color mb_10">
                                 <h5>Band Color</h5>
                                 <div class="color-varient">
-
                                     <!-- Violet Color Option -->
-                                    <input type="radio" class="btn-check" name="bandColor" id="colorViolet"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorViolet">
                                     <label class="color-circle violet" for="colorViolet"></label>
-
                                     <!-- Cyan Color Option -->
-                                    <input type="radio" class="btn-check" name="bandColor" id="colorCyan"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorCyan">
                                     <label class="color-circle cyan" for="colorCyan"></label>
-
                                     <!-- Blue Color Option -->
-                                    <input type="radio" class="btn-check" name="bandColor" id="colorBlue"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorBlue">
                                     <label class="color-circle blue" for="colorBlue"></label>
-
                                     <!-- Black Color Option -->
-                                    <input type="radio" class="btn-check" name="bandColor" id="colorBlack"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandColor" id="colorBlack">
                                     <label class="color-circle black" for="colorBlack"></label>
-
                                 </div>
                             </div>
-
                             <div class="product__content--size-varient mb_20">
                                 <h5>Wrist Size</h5>
                                 <div class="size-varient-all">
-
-                                    <input type="radio" class="btn-check" name="bandSize" id="SSize" value="69"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandSize" id="SSize" value="69">
                                     <label class="size-varient-item" for="SSize"><span>S</span> $69</label>
-
-                                    <input type="radio" class="btn-check" name="bandSize" id="MSize" value="79"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandSize" id="MSize" value="79">
                                     <label class="size-varient-item" for="MSize"><span>M</span> $79</label>
-
-                                    <input type="radio" class="btn-check" name="bandSize" id="LSize" value="89"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandSize" id="LSize" value="89">
                                     <label class="size-varient-item" for="LSize"><span>L</span> $89</label>
-
-                                    <input type="radio" class="btn-check" name="bandSize" id="XLSize" value="99"
-                                        autocomplete="off">
+                                    <input type="radio" class="btn-check" name="bandSize" id="XLSize" value="99">
                                     <label class="size-varient-item" for="XLSize"><span>XL</span> $99</label>
-
                                 </div>
                             </div>
-
-
                             <div class="product__content--cart-action">
-
                                 <div class="input-group">
                                     <button class="ts-btn-decrement" type="button" id="decrement">
                                         <img src="assets/img/icon/minus.png" alt="Minus">
@@ -146,36 +113,27 @@
                                         <img src="assets/img/icon/plus.png" alt="plus">
                                     </button>
                                 </div>
-
-                                <button class="ts-btn1 add-to-cart-btn ml_16 mr_12">Add to Cart</button>
-
+                                <button id="cart-button" class="ts-btn1 add-to-cart-btn ml_16 mr_12">Add to
+                                    Cart</button>
                                 <a class="heart d-flex align-items-center justify-content-center" href="#"><i
                                         class="far fa-heart"></i></a>
-
                             </div>
-
+                            <div class="product__content--total-price mt_18">
+                                <h6>Total Price: <span id="totalPrice">$69</span></h6>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="row">
-
                     <div class="col-xl-12">
-                        <div class="product-total-price text-center">
-                            <p>Total Price: <span id="totalPrice">$69</span></p>
-                        </div>
-
                         <div class="product-checkout-btn text-center">
-                            <button class="ts-btn2 btn-checkout" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <button id="btn-checkout" class="ts-btn2 btn-checkout" data-bs-toggle="modal"
+                                data-bs-target="#cartModal">
                                 Checkout <span id="total_item" class="count">0</span>
                             </button>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
         </section>
         <!-- ==========Product Section Ends Here========== -->
@@ -187,9 +145,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <h5 class="modal-title mb_10" id="cartModalLabel">Your Cart</h5>
-
                             <!-- Cart Table -->
-
                             <div class="table-responsive">
                                 <table class="table" id="cartTable">
                                     <thead>
@@ -203,7 +159,7 @@
                                     </thead>
                                     <tbody id="cartBody">
                                         <tr id="emptyCartMessage">
-                                            <td colspan="5" class="text-center">Your cart is empty!</td>
+                                            <td colspan="5" class="text-center p-4">Your cart is empty!</td>
                                         </tr>
                                     </tbody>
                                     <tfoot id="cartFooter">
@@ -228,7 +184,8 @@
                     </div>
                 </div>
             </div>
-            <!-- ==========Cart Modal Ends Here========== -->
+        </div>
+        <!-- ==========Cart Modal Ends Here========== -->
 
     </main>
 

@@ -73,7 +73,6 @@
   });
 
   // Add to Cart
-
   function updateCartModal() {
     const cartBody = document.getElementById("cartBody");
     const cartFooter = document.getElementById("cartFooter");
@@ -99,9 +98,13 @@
 
         const row = document.createElement("tr");
         row.innerHTML = `
-          <td><p style="display:inline-block"><span style="width:38px; display:inline-block;margin-right:4px;"><img src="${
+          <td><span style="width:38px; display:inline-block;margin-right:4px;"><img src="${
             item.product_img
-          }" alt="${item.name}" /> </span> ${item.name}</p></td>
+          }" alt="${
+          item.name
+        }" /> </span> <p class="item-name" style="display:inline-block;">${
+          item.name
+        }</p></td>
           <td><p style="display:inline-block">${item.color}</p></td>
           <td><strong>${item.size}</strong></td>
           <td>${item.quantity}</td>
@@ -127,6 +130,7 @@
     const selectedSizeInput = document.querySelector(
       'input[name="bandSize"]:checked'
     );
+
     const size = selectedSizeInput?.labels[0].textContent.trim()[0];
     if (!selectedColorInput || !selectedSizeInput) {
       alert("Please select both a color and a size.");

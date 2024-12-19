@@ -76,6 +76,8 @@
     top: -8%;
     left: -6%;
     z-index: -1;
+    animation: downup 8s infinite ease-in-out alternate;
+    -webkit-animation: downup 8s infinite ease-in-out alternate;
 
     @include breakpoint(max-xl) {
       top: 10%;
