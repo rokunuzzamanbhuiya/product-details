@@ -18,10 +18,12 @@ A Modern and Responsive Product Detials Page HTML Template. This Website was bui
 - Bootstrap
 - Sass
 - Vanila JavaScript
+- Font Awesome Icons
 - CSS Animation
 - Hover Effect
 - W3C Validate Code
 - Clean & Commented Code
+- Pixel Perfect Design
 
 =================================
 
